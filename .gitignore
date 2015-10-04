@@ -1,0 +1,9 @@
+/target
+
+/.idea
+
+/*.iml
+
+facebook-*.properties
+
+.DS_Store
