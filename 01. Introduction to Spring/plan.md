@@ -16,7 +16,7 @@
 
 
 ## Useful links
-[Книга Spring in action](https://www.assembla.com/spaces/gorsv/documents/aZ5WPupOSr457dacwqEsg8/download/aZ5WPupOSr457dacwqEsg8) - Посмотреть 2 главу
+[Книга Spring in action](https://www.assembla.com/spaces/gorsv/documents/aZ5WPupOSr457dacwqEsg8/download/aZ5WPupOSr457dacwqEsg8) (Глава 2)
 
 [Хорошее видео про IoC](http://www.youtube.com/watch?v=ZdBwF26oWhs)
 
