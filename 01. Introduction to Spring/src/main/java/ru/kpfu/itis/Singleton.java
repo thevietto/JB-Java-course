@@ -1,8 +1,5 @@
 package ru.kpfu.itis;
 
-/**
- * Created by root on 05.10.15.
- */
 public class Singleton {
 
     private static Singleton INSTANCE;
@@ -19,5 +16,10 @@ public class Singleton {
         return INSTANCE;
     }
 
+    public Mucician oleg() {
+        Mucician m = new Mucician();
+        m.setAge(12);
+        return m;
+    }
 
 }
