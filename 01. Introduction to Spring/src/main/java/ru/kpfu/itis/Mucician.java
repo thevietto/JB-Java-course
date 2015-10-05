@@ -1,6 +1,7 @@
 package ru.kpfu.itis;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 import java.util.List;
 
@@ -14,6 +15,7 @@ public class Mucician {
     int age;
 
     @Autowired
+    @Qualifier("piano")
     Instrument instrument;
 
     List<String> songs;
