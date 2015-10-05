@@ -21,7 +21,8 @@
 
 ## Useful Links
 
-[Страница проекта MVC](http://projects.spring.io/spring-framework/)
+[Страница проекта Spring MVC](http://projects.spring.io/spring-framework/)
+
 [Туториал с примерами](http://www.tutorialspoint.com/spring/spring_web_mvc_framework.htm)
 
 ## Домашнее задание
