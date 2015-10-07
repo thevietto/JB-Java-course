@@ -5,7 +5,8 @@
 ![MVC concept] (../extras/spring-mvc-concepts.jpg)
 
 ## План
-* Настройка MVC
+* Паттерн MVC
+* Настройка Spring MVC
  - DispatcherServlet
  - contextConfiguration
 * Создание контроллера
