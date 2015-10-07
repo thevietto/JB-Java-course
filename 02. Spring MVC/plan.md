@@ -25,4 +25,6 @@
 
 [Туториал с примерами](http://www.tutorialspoint.com/spring/spring_web_mvc_framework.htm)
 
+[Введение в JSP](http://www.codenet.ru/webmast/java/jsp.php)
+
 ## Домашнее задание
