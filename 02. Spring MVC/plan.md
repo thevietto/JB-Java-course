@@ -5,7 +5,8 @@
 ![MVC concept] (../extras/spring-mvc-concepts.jpg)
 
 ## План
-* Настройка MVC
+* Паттерн MVC
+* Настройка Spring MVC
  - DispatcherServlet
  - contextConfiguration
 * Создание контроллера
@@ -24,5 +25,7 @@
 [Страница проекта Spring MVC](http://projects.spring.io/spring-framework/)
 
 [Туториал с примерами](http://www.tutorialspoint.com/spring/spring_web_mvc_framework.htm)
+
+[Введение в JSP](http://www.codenet.ru/webmast/java/jsp.php)
 
 ## Домашнее задание
