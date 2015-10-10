@@ -15,3 +15,5 @@
 [Spring Validator](http://docs.spring.io/spring-framework/docs/current/spring-framework-reference/html/validation.html)
 
 ## Домашнее задание
+
+1) Сделать возможность редактирования отдельного юзера и вывода информации о юзере, используюя @PathVariable
