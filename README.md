@@ -1,5 +1,5 @@
 # JB-Java-course
 Курс по веб-разработке на Java для студентов 2 курса лаборатории JetBrains ИТИС КФУ
 
-* [01. Introduction to Spring](01. Introduction to Spring/plan.md)
-* [02. Spring MVC](02. Spring MVC/plan.md)
+* [01. Introduction to Spring](01. Introduction to Spring/plan.md) 05.10.15 17:00
+* [02. Spring MVC basics](02. Spring MVC/plan.md) 08.10.15 17:00
