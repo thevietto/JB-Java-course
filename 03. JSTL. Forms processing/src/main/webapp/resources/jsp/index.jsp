@@ -6,5 +6,9 @@
 <body>
 <h1>It works!</h1>
 
+<a href="/users/all">Посмотреть всех</a> <br>
+<a href="/users/add">Добавить нового</a>
+
 </body>
 </html>
+
