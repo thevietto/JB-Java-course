@@ -1,4 +1,4 @@
-# Spring JdbcTemplate
+# ORM, JPA, DAO
 
 ## План
 
