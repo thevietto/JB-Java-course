@@ -6,6 +6,7 @@
 
     <groupId>04.Spring_JDBC</groupId>
     <artifactId>04.Spring_JDBC</artifactId>
+    <version>1.0</version>
     <packaging>war</packaging>
 
     <properties>
