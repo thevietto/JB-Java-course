@@ -11,12 +11,12 @@ public class User {
 
     private String password;
 
-    private int age;
+    private String age;
 
     public User() {
     }
 
-    public User(String name, String surname, String login, String password, int age) {
+    public User(String name, String surname, String login, String password, String age) {
         this.name = name;
         this.surname = surname;
         this.login = login;
@@ -56,11 +56,11 @@ public class User {
         this.password = password;
     }
 
-    public int getAge() {
+    public String getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(String age) {
         this.age = age;
     }
 }

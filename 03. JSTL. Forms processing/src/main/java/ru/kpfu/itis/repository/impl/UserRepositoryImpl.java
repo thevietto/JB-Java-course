@@ -11,11 +11,11 @@ import java.util.List;
 @Repository
 public class UserRepositoryImpl implements UserRepository {
 
-    List<User> users = new ArrayList<User>(){{
-        add(new User("Максим", "Игнатьев", "vietto", "1234", 20));
-        add(new User("Андрей", "Титов", "amigo", "1234", 20));
-        add(new User("Михаил", "Магомедов", "misha", "1234", 19));
-        add(new User("Саша", "Прискин", "alex", "1234", 19));
+    List<User> users = new ArrayList<User>() {{
+        add(new User("Максим", "Игнатьев", "vietto", "1234", "20"));
+        add(new User("Андрей", "Титов", "amigo", "1234", "20"));
+        add(new User("Михаил", "Магомедов", "misha", "1234", "20"));
+        add(new User("Саша", "Прискин", "alex", "1234", "20"));
     }};
 
     @Override
