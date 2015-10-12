@@ -13,6 +13,10 @@
 
 ## Useful Links
 
+[Юрий Ткач] (https://www.youtube.com/playlist?list=PLCA5CB42F5A816A17) - лекции 9-12
+
+[Habrahabr. Шпаргалка по JPA] (http://habrahabr.ru/post/265061/)
+
 ## Домашнее задание
 
 
