@@ -14,4 +14,5 @@
 
 ## Домашнее задание
 
+1) Читать про отношения в JPA (@ManyToOne, @OneToMany, @ManyToMany), LAZY и EAGER инициализация
 
