@@ -2,39 +2,40 @@ package ru.kpfu.itis.repository.impl;
 
 
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 import ru.kpfu.itis.model.User;
 import ru.kpfu.itis.repository.UserRepository;
 
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.PersistenceContexts;
+import javax.persistence.Query;
 import java.util.ArrayList;
 import java.util.List;
 
 @Repository
 public class UserRepositoryImpl implements UserRepository {
 
-    List<User> users = new ArrayList<User>() {{
-        add(new User("Максим", "Игнатьев", "vietto", "1234", "20"));
-        add(new User("Андрей", "Титов", "amigo", "1234", "20"));
-        add(new User("Михаил", "Магомедов", "misha", "1234", "20"));
-        add(new User("Саша", "Прискин", "alex", "1234", "20"));
-    }};
+    @PersistenceContext
+    EntityManager em;
 
     @Override
     public List<User> getAllUsers() {
-        return users;
+        Query query = em.createNativeQuery("SELECT * FROM users", User.class);
+        return query.getResultList();
     }
 
     @Override
     public User findUserByLogin(String login) {
-        for (User user : users) {
-            if (user.getLogin() != null && user.getLogin().equals(login)) {
-                return user;
-            }
-        }
-        return null;
+        Query query = em.createNativeQuery("SELECT * from users where login = ?");
+        query.setParameter(1, login);
+        return (User) query.getSingleResult();
     }
 
     @Override
+    @Transactional
     public void addUser(User user) {
-        users.add(user);
+        em.persist(user);
+        user.setName("Oleg");
     }
 }
