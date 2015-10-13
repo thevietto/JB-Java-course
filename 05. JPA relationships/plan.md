@@ -3,7 +3,7 @@
 ## План
 
 * Embedded классы
-* Ассоциации ManyToOne
+* Ассоциации ManyToOne/OneToMany
 * Двунаправленные ассоциации OneToMany
 * Ассоциации OneToOne
 * Ассоциации ManyToMany
