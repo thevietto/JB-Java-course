@@ -1,4 +1,4 @@
-# JPA relationships
+# JPA relationships mapping
 
 ## План
 
