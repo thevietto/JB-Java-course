@@ -5,3 +5,4 @@
 * [02. Spring MVC basics](02. Spring MVC basics/plan.md) 08.10.15 17:00
 * [03. JSTL. Forms processing](03. JSTL. Forms processing/plan.md) 10.10.15 16:00
 * [04. ORM, JPA, DAO](04. ORM, JPA, DAO/plan.md) 12.10.15 17:00
+* [05. JPA relationships](05. JPA relationships/plan.md) 15.10.15 17:00
