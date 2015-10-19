@@ -9,7 +9,7 @@
 * Аномалии транзакций
 * Уровни изоляции транзакций
 
-![Isolation levels] (../extras/Isolation_Levels.PNG)
+ ![Isolation levels] (../extras/Isolation_Levels.PNG)
 
 ###### Дополнительно
 * Spring Data JPA
