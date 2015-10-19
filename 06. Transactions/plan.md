@@ -13,6 +13,9 @@
 * Уровни изоляции транзакций
 
  ![Isolation levels] (../extras/Isolation_Levels.PNG)
+* Блокировки
+ * Оптимистическая
+ * Пессимистическая
 
 ###### Дополнительно
 * Spring Data JPA
