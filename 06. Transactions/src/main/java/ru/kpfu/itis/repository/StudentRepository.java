@@ -11,7 +11,7 @@ import java.util.List;
 @Repository
 public interface StudentRepository extends JpaRepository<Student, Long> {
 
-    List<Student> findByAdressStreetAndNameAndAgeBetweenOrderBySurnameAsc(String adress, String name, int from, int to);
+    List<Student> findByAdressStreet(String street);
 
     @Query(value = "from Student s where s.name = ?1")
     Student findByName(String name);
