@@ -16,4 +16,11 @@ public class StudentServiceImpl implements StudentService {
     public void saveStudent(Student student) {
         studentRepository.save(student);
     }
+
+    @Override
+    public void debugThis() {
+        int a = 5;
+    }
+
+
 }
