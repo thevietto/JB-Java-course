@@ -8,3 +8,4 @@
 * [05. JPA relationships mapping](05. JPA relationships mapping/plan.md) 15.10.15 17:00
 * [06. Transactions](06. Transactions/plan.md) 19.10.15 17:00
 * 07. Spring Security 22.10.15 17:00
+* 08. JavaScript, Jquery, AJAX 24.10.15 16:00
