@@ -7,6 +7,9 @@
 
  ![ACID] (../extras/DB-Testing.jpg)
 * Аномалии транзакций
+ * Грязное чтение
+ * Неповторяемое чтение
+ * Фантомная вставка
 * Уровни изоляции транзакций
 
  ![Isolation levels] (../extras/Isolation_Levels.PNG)
