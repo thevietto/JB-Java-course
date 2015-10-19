@@ -24,6 +24,7 @@
 
 ## Useful Links
 
+[Документация Spring Data JPA](http://docs.spring.io/spring-data/jpa/docs/current/reference/html/#repositories.query-methods)
 
 ## Домашнее задание
 
