@@ -1,3 +1,4 @@
+<%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
 <%--
   Created by IntelliJ IDEA.
   User: root
@@ -12,5 +13,15 @@
 </head>
 <body>
 <h1>Панель управления</h1>
+
+<h2>Привет, <security:authentication property="principal.username"/>!</h2>
+
+<security:authorize access="hasRole('ROLE_USER')">
+    <p>Функционал юзера</p>
+</security:authorize>
+<security:authorize access="hasRole('ROLE_ADMIN')">
+    <p>Функционал админа</p>
+</security:authorize>
+
 </body>
 </html>
