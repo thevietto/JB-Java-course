@@ -16,11 +16,13 @@
 
 ###### Занятие 2
 * Шифрование пароля
+* Кастомный auth-provider
 * Защита методов
 
 
 ## Useful Links
 
+[Pre-post annotations](http://www.concretepage.com/spring/spring-security/preauthorize-postauthorize-in-spring-security)
 
 ## Домашнее задание
 
