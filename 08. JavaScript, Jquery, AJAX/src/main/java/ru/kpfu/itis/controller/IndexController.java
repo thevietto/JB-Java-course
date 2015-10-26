@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import ru.kpfu.itis.exception.AccessDenyException;
 import ru.kpfu.itis.form.UserRegistrationForm;
 import ru.kpfu.itis.model.enums.UserRole;
+import ru.kpfu.itis.service.TweetService;
 import ru.kpfu.itis.service.UserService;
 
 import java.util.ArrayList;
