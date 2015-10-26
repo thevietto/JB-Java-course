@@ -1,14 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Main</title>
-    <link rel="stylesheet" type="text/css" href="/resources/css/bootstrap.css"/>
-</head>
-<body>
+<#include "main-template.ftl"/>
 
-<h1>It works</h1>
-<a href="/main"
+<#macro m_body>
 
-</body>
-</html>
+<div class="col-lg-6 col-lg-offset-3">
+    <textarea id="js-tweet-text" class="form-control" rows="3" title="tweet"></textarea>
+    <input type="submit" id="js-sendtweet">
+</div>
+
+<div id="js-tweets" class="col-lg-6 col-lg-offset-3">
+
+</div>
+
+</#macro>
+
+<@main title="Главная" customScripts=["resources/js/tweet.js"]/>

@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="/resources/css/bootstrap.css"/>
-</head>
-<body>
+<#include "main-template.ftl"/>
+<#macro m_body>
+
 <div class="col-md-4 col-md-offset-4">
     <form action="/login/process" method="post">
         <div class="form-group">
@@ -16,11 +11,12 @@
             <label for="exampleInputPassword1">Пароль</label>
             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Пароль" name="password">
         </div>
-    <#if error??>
-        <p>Неправильный логин или пароль</p>
-    </#if>
+        <#if error??>
+            <p>Неправильный логин или пароль</p>
+        </#if>
         <button type="submit" class="btn btn-default">Submit</button>
     </form>
 </div>
-</body>
-</html>
+
+</#macro>
+<@main title="Логин"/>

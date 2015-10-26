@@ -1,13 +1,6 @@
 <#assign sf=JspTaglibs["http://www.springframework.org/tags/form"]>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Registration</title>
-    <link rel="stylesheet" type="text/css" href="/resources/css/bootstrap.css"/>
-</head>
-<body>
+<#include "main-template.ftl"/>
+<#macro m_body>
 
 <div class="col-md-4 col-md-offset-4">
 <@sf.form action="/registration" method="post" modelAttribute="userform">
@@ -26,8 +19,14 @@
         <@sf.input path="repassword" id="repassword" cssClass="form-control" placeholder="Повторите пароль"/>
         <@sf.errors path="repassword"/>
     </div>
+    <div class="form-group">
+        <label for="email">Ещё раз</label>
+        <@sf.input path="email" id="email" cssClass="form-control" placeholder="Email"/>
+        <@sf.errors path="email"/>
+    </div>
     <button type="submit" class="btn btn-default">Submit</button>
 </@sf.form>
 </div>
-</body>
-</html>
+
+</#macro>
+<@main title="Главная"/>
