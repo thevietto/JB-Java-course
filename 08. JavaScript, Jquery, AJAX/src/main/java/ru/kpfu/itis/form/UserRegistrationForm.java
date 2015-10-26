@@ -1,9 +1,12 @@
 package ru.kpfu.itis.form;
 
 
+import javax.validation.constraints.Size;
+
 public class UserRegistrationForm {
 
     private String username;
+    @Size(min = 6, message = "dvjrbrbr")
     private String password;
     private String repassword;
 
