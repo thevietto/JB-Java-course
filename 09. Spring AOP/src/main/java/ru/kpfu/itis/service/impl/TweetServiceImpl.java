@@ -2,6 +2,7 @@ package ru.kpfu.itis.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import ru.kpfu.itis.annotation.RetryIfException;
 import ru.kpfu.itis.model.Tweet;
 import ru.kpfu.itis.model.User;
 import ru.kpfu.itis.repository.TweetRepository;
@@ -25,8 +26,12 @@ public class TweetServiceImpl implements TweetService{
         tweetRepository.save(tweet);
     }
 
+    @RetryIfException(value = 4)
     @Override
     public List<Tweet> getAll() {
+        if (Math.random() > 0.5) {
+            throw new RuntimeException("HAHAHAHAHAH!");
+        }
         return tweetRepository.findAll();
     }
 }
