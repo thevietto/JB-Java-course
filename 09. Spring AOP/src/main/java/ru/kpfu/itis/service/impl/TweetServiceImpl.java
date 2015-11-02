@@ -6,6 +6,7 @@ import ru.kpfu.itis.model.Tweet;
 import ru.kpfu.itis.model.User;
 import ru.kpfu.itis.repository.TweetRepository;
 import ru.kpfu.itis.service.TweetService;
+import ru.kpfu.itis.util.annotation.RetryIfException;
 
 import java.util.Date;
 import java.util.List;
@@ -25,8 +26,12 @@ public class TweetServiceImpl implements TweetService{
         tweetRepository.save(tweet);
     }
 
+    @RetryIfException(value = 1)
     @Override
     public List<Tweet> getAll() {
+        if (Math.random() > 0.5) {
+            throw new RuntimeException("HAHAHAHAA!!!!!!!!!!");
+        }
         return tweetRepository.findAll();
     }
 }
