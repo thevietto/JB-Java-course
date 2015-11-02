@@ -11,3 +11,4 @@ N | Тема | Дата проведения
 06 | [Transactions](06. Transactions/plan.md) | `19.10.15 17:00`
 07 | [Spring Security](07. Spring Security/plan.md) | `22.10.15 17:00`, `24.10.15 16:00`
 08 | [JavaScript, Jquery, AJAX](08. JavaScript, Jquery, AJAX/plan.md) | `26.10.15 17:00`
+09 | [Spring AOP](09. Spring AOP/plan.md) | `02.11.15 17:00`
