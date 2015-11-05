@@ -1,0 +1,13 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="1511051336_1" author="vietto">
+        <loadUpdateData tableName="tweet" primaryKey="id"
+                        schemaName="public"
+                        file="db/changelog/tweets.csv">
+        </loadUpdateData>
+    </changeSet>
+</databaseChangeLog>
