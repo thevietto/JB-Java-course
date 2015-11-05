@@ -186,7 +186,7 @@
                 <configuration>
                     <changeLogFile>${basedir}/src/main/resources/db/changelog.xml</changeLogFile>
                     <propertyFileWillOverride>false</propertyFileWillOverride>
-                    <dropFirst>true</dropFirst>
+                    <dropFirst>false</dropFirst>
                     <propertyFile>${basedir}/src/main/resources/iquibase.properties</propertyFile>
                 </configuration>
                 <executions>
