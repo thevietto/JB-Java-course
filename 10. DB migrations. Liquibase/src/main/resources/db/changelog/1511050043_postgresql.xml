@@ -1,0 +1,38 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="1511050043_1" author="vietto">
+        <createTable tableName="users">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="username" type="varchar(255)"/>
+            <column name="password" type="varchar(255)"/>
+            <column name="role" type="varchar(255)"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="1511050043_2" author="vietto">
+        <createTable tableName="tweet">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="text" type="varchar(255)"/>
+            <column name="created_at" type="timestamp"/>
+            <column name="user_id" type="bigint">
+                <constraints references="users(id)" foreignKeyName="tweet_user_fk"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="1511050043_3" author="vietto">
+        <createSequence sequenceName="hibernate_sequence"
+                        incrementBy="1"
+                        startValue="100"
+                        schemaName="public"/>
+    </changeSet>
+
+</databaseChangeLog>
