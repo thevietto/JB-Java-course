@@ -1,0 +1,39 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="1511071703_1" author="roaegorov">
+        <createTable tableName="comment">
+            <column name="id" type="bigint"/>
+            <column name="text" type="text"/>
+            <column name="user_id" type="bigint"/>
+            <column name="tweet_id" type="bigint"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="1511071703_2" author="roaegorov">
+        <addPrimaryKey tableName="comment" columnNames="id"/>
+    </changeSet>
+
+    <changeSet id="1511071703_3" author="roaegorov">
+        <addForeignKeyConstraint baseTableName="comment" baseColumnNames="user_id" constraintName="comment_user_fk"
+                                 referencedTableName="users"
+                                 referencedColumnNames="id"/>
+    </changeSet>
+
+
+    <changeSet id="1511071703_4" author="roaegorov">
+        <addForeignKeyConstraint baseTableName="comment" baseColumnNames="tweet_id" constraintName="comment_tweet_fk"
+                                 referencedTableName="tweet"
+                                 referencedColumnNames="id"/>
+    </changeSet>
+    <changeSet id="1511071703_5" author="mikl">
+        <createSequence sequenceName="comment_seq"
+                        startValue="1"
+                        incrementBy="1"
+        />
+
+    </changeSet>
+</databaseChangeLog>

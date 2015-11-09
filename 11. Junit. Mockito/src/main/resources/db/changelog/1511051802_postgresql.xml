@@ -1,0 +1,53 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+
+    <changeSet id="1511051802_1" author="Mikl">
+        <createTable tableName="tweet">
+            <column name="id"  type="bigint"/>
+            <column name="text" type="text" />
+            <column name="created_at" type="date" />
+            <column name="user_id" type="bigint" />
+        </createTable>
+    </changeSet>
+    <changeSet id="1511051802_2" author="Mikl">
+        <addPrimaryKey tableName="tweet" columnNames="id"/>
+    </changeSet>
+    <changeSet id="1511051802_3" author="Mikl">
+        <addForeignKeyConstraint baseTableName="tweet" baseColumnNames="user_id" constraintName="twet_user_fk" referencedTableName="users"
+                                 referencedColumnNames="id"/>
+    </changeSet>
+    
+    <changeSet id="1511051802_4" author="vietto">
+        <createSequence sequenceName="hibernate_sequence"
+                        schemaName="public"
+                        incrementBy="1"
+                        startValue="1"/>
+
+    </changeSet>
+
+    <changeSet id="1511051802_5" author="vietto">
+        <createSequence sequenceName="users_seq"
+                        schemaName="public"
+                        incrementBy="5"
+                        startValue="100"/>
+
+    </changeSet>
+
+    <!--<changeSet id="1" author="">-->
+        <!--<preConditions onFail="MARK_RAN">-->
+            <!--<not><tableExists tableName="user"/></not>-->
+        <!--</preConditions>-->
+        <!---->
+        <!--<addColumn tableName="user">-->
+            <!--<column name="adress" type="varchar"/>-->
+        <!--</addColumn>-->
+    <!--</changeSet>-->
+
+
+
+
+</databaseChangeLog>
