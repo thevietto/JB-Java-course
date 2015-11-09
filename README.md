@@ -13,3 +13,4 @@ N | Тема | Дата проведения | Кол-во пар
 08 | [JavaScript, Jquery, AJAX](08. JavaScript, Jquery, AJAX/plan.md) | `26.10.15 17:00` | 1
 09 | [Spring AOP](09. Spring AOP/plan.md) | `02.11.15 17:00` | 1
 10 | [DB migrations, Liquibase](10. DB migrations. Liquibase/plan.md) | `04.11.15 17:00`,`07.11.15 17:00` | 2
+11 | [JUnit, Mockito](11. Junit. Mockito/plan.md) | `09.11.15 17:00` | 1
