@@ -8,9 +8,9 @@ import ru.kpfu.itis.model.enums.UserRole;
 
 public class UserRegistrationFormToUserTransformer {
 
-    static BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
+    BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 
-    public static User transform(UserRegistrationForm form) {
+    public User transform(UserRegistrationForm form) {
         if (form == null) {
             return null;
         }
